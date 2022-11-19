@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "python-template"
+version = "0.1.0"
+description = "Template for python repositories"
+authors = ["Eric Schrock <eschrock@gmail.com>"]
+readme = "README.md"
+packages = [{include = "python_template"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^5.0.4"
+black = {version = "^22.10.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
